@@ -85,6 +85,7 @@ kubectl delete pod [pods name]
 ```
 
 <br>
+
 ### 궁금한점..?
 - kubectl apply vs create  
 
