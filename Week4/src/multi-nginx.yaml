@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multi-nginx
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.14
+      ports:
+        - containerPort: 80
+          protocol: TCP
+    - name: centos-container
+      image: centos:7
+      command:
+      - sleep
+      - "3600"
